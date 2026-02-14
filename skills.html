@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matthew | Skills</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    
+    .skill-card {
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 30px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .skill-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+      transition: left 0.6s ease;
+    }
+    
+    .skill-card:hover::before {
+      left: 100%;
+    }
+    
+    .skill-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(0, 242, 254, 0.4);
+      box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+    }
+    
+    .skill-icon {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      display: inline-block;
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .skill-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    
+    .skill-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    
+    .skill-tag {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgba(0, 242, 254, 0.1);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      border-radius: 20px;
+      color: #00f2fe;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .skill-tag:hover {
+      background: rgba(0, 242, 254, 0.2);
+      transform: translateY(-2px);
+    }
+    
+    .languages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    
+    .language-item {
+      text-align: center;
+      padding: 25px;
+      background: linear-gradient(135deg, rgba(245, 87, 108, 0.1) 0%, rgba(240, 147, 251, 0.1) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      transition: all 0.3s ease;
+    }
+    
+    .language-item:hover {
+      transform: translateY(-5px);
+      border-color: rgba(245, 87, 108, 0.4);
+      box-shadow: 0 10px 30px rgba(245, 87, 108, 0.2);
+    }
+    
+    .language-flag {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    
+    .language-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="profile-photoaidcom-cropped.jpg" alt="Matthew" class="profile-pic" />
+    <h1>Skills & Tools</h1>
+    <p style="font-size: 1.2rem; color: #b4b4b4; margin-top: 10px; animation: fadeInUp 0.8s ease-out 0.3s both;">Technical Expertise & Competencies</p>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card" data-aos="fade-up" data-aos-duration="800">
+      <h2>Technical Skills</h2>
+      <p>My technical skill set spans web development, digital marketing, and data analysis. I continuously update my knowledge to stay current with industry trends and best practices.</p>
+      
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="skill-icon">💻</div>
+          <h3 class="skill-title">Web Development</h3>
+          <p style="color: #b4b4b4; margin-bottom: 15px;">Building responsive, user-friendly websites with modern technologies</p>
+          <div class="skill-items">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="skill-icon">🚀</div>
+          <h3 class="skill-title">Digital Marketing</h3>
+          <p style="color: #b4b4b4; margin-bottom: 15px;">Driving online presence through strategic SEO and content optimization</p>
+          <div class="skill-items">
+            <span class="skill-tag">SEO (On-Page)</span>
+            <span class="skill-tag">SEO (Off-Page)</span>
+            <span class="skill-tag">Content Strategy</span>
+            <span class="skill-tag">Keyword Research</span>
+            <span class="skill-tag">Link Building</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="skill-icon">📊</div>
+          <h3 class="skill-title">Analytics & Tools</h3>
+          <p style="color: #b4b4b4; margin-bottom: 15px;">Analyzing data to drive insights and optimize performance</p>
+          <div class="skill-items">
+            <span class="skill-tag">Google Analytics</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Performance Tracking</span>
+            <span class="skill-tag">Report Generation</span>
+            <span class="skill-tag">A/B Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="skill-icon">🤝</div>
+          <h3 class="skill-title">CRM & Client Management</h3>
+          <p style="color: #b4b4b4; margin-bottom: 15px;">Building strong relationships and delivering exceptional service</p>
+          <div class="skill-items">
+            <span class="skill-tag">Client Communication</span>
+            <span class="skill-tag">Project Coordination</span>
+            <span class="skill-tag">Reporting</span>
+            <span class="skill-tag">Stakeholder Management</span>
+            <span class="skill-tag">Feedback Integration</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="skill-icon">🎨</div>
+          <h3 class="skill-title">Design & UX</h3>
+          <p style="color: #b4b4b4; margin-bottom: 15px;">Creating visually appealing and user-centric interfaces</p>
+          <div class="skill-items">
+            <span class="skill-tag">UI Design</span>
+            <span class="skill-tag">User Experience</span>
+            <span class="skill-tag">Visual Design</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">Accessibility</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <div class="skill-icon">⚙️</div>
+          <h3 class="skill-title">Tools & Platforms</h3>
+          <p style="color: #b4b4b4; margin-bottom: 15px;">Proficient in industry-standard development and marketing tools</p>
+          <div class="skill-items">
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Google Search Console</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+      <h2>Soft Skills</h2>
+      <p>Beyond technical abilities, I bring strong interpersonal and professional skills that enable effective collaboration and project success.</p>
+      
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-right" data-aos-delay="100">
+          <div class="skill-icon">👥</div>
+          <h3 class="skill-title">Leadership</h3>
+          <p style="color: #b4b4b4;">Guiding teams toward common goals with clear vision and motivation</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-right" data-aos-delay="200">
+          <div class="skill-icon">🎤</div>
+          <h3 class="skill-title">Public Speaking</h3>
+          <p style="color: #b4b4b4;">Effectively communicating ideas to diverse audiences with confidence</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-right" data-aos-delay="300">
+          <div class="skill-icon">⏰</div>
+          <h3 class="skill-title">Time Management</h3>
+          <p style="color: #b4b4b4;">Prioritizing tasks and meeting deadlines while maintaining quality</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-right" data-aos-delay="400">
+          <div class="skill-icon">🧩</div>
+          <h3 class="skill-title">Problem Solving</h3>
+          <p style="color: #b4b4b4;">Analyzing challenges and developing innovative solutions</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-right" data-aos-delay="500">
+          <div class="skill-icon">🔄</div>
+          <h3 class="skill-title">Adaptability</h3>
+          <p style="color: #b4b4b4;">Thriving in dynamic environments and embracing change</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-right" data-aos-delay="600">
+          <div class="skill-icon">🤔</div>
+          <h3 class="skill-title">Critical Thinking</h3>
+          <p style="color: #b4b4b4;">Making informed decisions through logical analysis and evaluation</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+      <h2>Languages</h2>
+      <p>Multilingual proficiency enabling effective communication across diverse cultures and contexts.</p>
+      
+      <div class="languages-grid">
+        <div class="language-item" data-aos="flip-left" data-aos-delay="100">
+          <div class="language-flag">🇬🇧</div>
+          <p class="language-name">English</p>
+          <p style="color: #b4b4b4; font-size: 0.9rem; margin-top: 5px;">Fluent</p>
+        </div>
+
+        <div class="language-item" data-aos="flip-left" data-aos-delay="200">
+          <div class="language-flag">🇮🇳</div>
+          <p class="language-name">Tamil</p>
+          <p style="color: #b4b4b4; font-size: 0.9rem; margin-top: 5px;">Native</p>
+        </div>
+
+        <div class="language-item" data-aos="flip-left" data-aos-delay="300">
+          <div class="language-flag">🇮🇳</div>
+          <p class="language-name">Malayalam</p>
+          <p style="color: #b4b4b4; font-size: 0.9rem; margin-top: 5px;">Proficient</p>
+        </div>
+
+        <div class="language-item" data-aos="flip-left" data-aos-delay="400">
+          <div class="language-flag">🇮🇳</div>
+          <p class="language-name">Hindi</p>
+          <p style="color: #b4b4b4; font-size: 0.9rem; margin-top: 5px;">Proficient</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+      <h2>Continuous Learning</h2>
+      <p>I'm committed to staying current with emerging technologies and industry trends. Currently exploring:</p>
+      <div class="skill-items" style="margin-top: 20px;">
+        <span class="skill-tag">React.js</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">AI/ML Basics</span>
+        <span class="skill-tag">Cloud Computing</span>
+        <span class="skill-tag">Cybersecurity</span>
+      </div>
+      <p style="margin-top: 25px; color: #b4b4b4;">My passion for learning drives me to constantly expand my skill set and explore new areas of technology. I believe that in the fast-paced tech industry, continuous education is not just beneficial—it's essential.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>📧 prmatthew2005@gmail.com | 📍 Tamil Nadu, India</p>
+    <p>🔗 <a href="https://www.linkedin.com/in/p-r-matthew-728870373/" target="_blank">LinkedIn Profile</a></p>
+    <p style="margin-top: 20px; color: #666; font-size: 0.9rem;">© 2026 P. R. Matthew. Built with passion.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

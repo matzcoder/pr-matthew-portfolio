@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matthew | Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    .timeline-item {
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 16px;
+      height: 16px;
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px rgba(79, 172, 254, 0.2);
+    }
+    
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 24px;
+      width: 2px;
+      height: calc(100% + 20px);
+      background: linear-gradient(180deg, rgba(79, 172, 254, 0.5) 0%, transparent 100%);
+    }
+    
+    .timeline-item:last-child::after {
+      display: none;
+    }
+    
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .experience-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0;
+    }
+    
+    .experience-date {
+      display: inline-block;
+      padding: 6px 16px;
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+      border: 1px solid rgba(102, 126, 234, 0.3);
+      border-radius: 20px;
+      color: #00f2fe;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    
+    .experience-company {
+      color: #00f2fe;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="profile-photoaidcom-cropped.jpg" alt="Matthew" class="profile-pic" />
+    <h1>Work Experience</h1>
+    <p style="font-size: 1.2rem; color: #b4b4b4; margin-top: 10px; animation: fadeInUp 0.8s ease-out 0.3s both;">Professional Journey & Key Achievements</p>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card" data-aos="fade-up" data-aos-duration="800">
+      <h2>Professional Experience</h2>
+      <p>My professional journey has been marked by hands-on experience in web development, digital marketing, and client management. Through internships and project-based work, I've developed a strong understanding of real-world business needs and how technology can address them effectively.</p>
+    </section>
+
+    <section class="card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+      <div class="timeline-item">
+        <div class="experience-header">
+          <div>
+            <h3 class="experience-title">Intern, Software Plus Solutions</h3>
+            <p class="experience-company">Software Plus Solutions</p>
+          </div>
+          <span class="experience-date">Jan 2023 – Mar 2023</span>
+        </div>
+        
+        <p style="margin-bottom: 20px;">During my three-month internship at Software Plus Solutions, I gained valuable hands-on experience in digital marketing and web development. This role allowed me to work directly with clients and contribute to real projects that impacted business outcomes.</p>
+        
+        <h4 style="color: #00f2fe; margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;">Key Responsibilities & Achievements:</h4>
+        <ul>
+          <li><strong>SEO Strategy Management:</strong> Managed comprehensive SEO strategies for WordPress websites, including keyword research, on-page optimization, and content structuring to improve search engine rankings</li>
+          <li><strong>Content Coordination:</strong> Coordinated with content creators to ensure SEO-friendly content that aligned with client goals and target audience preferences</li>
+          <li><strong>Client Communication:</strong> Maintained regular communication with clients to understand their requirements, provide updates, and gather feedback for continuous improvement</li>
+          <li><strong>Performance Analysis:</strong> Monitored website performance using Google Analytics and provided actionable insights to enhance user engagement and conversion rates</li>
+          <li><strong>WordPress Development:</strong> Worked on WordPress site customization, plugin integration, and theme optimization to improve site functionality and user experience</li>
+        </ul>
+        
+        <h4 style="color: #00f2fe; margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;">Skills Developed:</h4>
+        <p style="color: #b4b4b4;">Technical SEO, WordPress Development, Client Management, Google Analytics, Content Strategy, Project Coordination</p>
+      </div>
+    </section>
+
+    <section class="card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+      <div class="timeline-item">
+        <div class="experience-header">
+          <div>
+            <h3 class="experience-title">Digital Marketing Specialist</h3>
+            <p class="experience-company">Short-Term Project</p>
+          </div>
+          <span class="experience-date">June 2023</span>
+        </div>
+        
+        <p style="margin-bottom: 20px;">In this intensive short-term project, I took on a more strategic role, focusing on client onboarding, campaign management, and performance reporting. This experience enhanced my ability to manage multiple stakeholders and deliver results under tight deadlines.</p>
+        
+        <h4 style="color: #00f2fe; margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;">Key Responsibilities & Achievements:</h4>
+        <ul>
+          <li><strong>Client Onboarding:</strong> Led the onboarding process for new clients, conducting initial consultations to understand their business objectives, target audience, and marketing goals</li>
+          <li><strong>Publishing Coordination:</strong> Monitored content publishing schedules across multiple platforms, ensuring timely delivery and consistency in brand messaging</li>
+          <li><strong>Campaign Analysis:</strong> Analyzed branding campaigns using data-driven insights to measure effectiveness, identify improvement areas, and optimize future strategies</li>
+          <li><strong>Report Generation:</strong> Created detailed performance reports with visualizations and recommendations, presenting findings to clients in a clear and actionable manner</li>
+          <li><strong>Strategy Recommendations:</strong> Provided strategic recommendations based on campaign performance data to help clients maximize their return on investment</li>
+        </ul>
+        
+        <h4 style="color: #00f2fe; margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;">Skills Developed:</h4>
+        <p style="color: #b4b4b4;">Campaign Management, Data Analysis, Client Onboarding, Report Writing, Strategic Planning, Stakeholder Communication</p>
+      </div>
+    </section>
+
+    <section class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+      <h2>Key Takeaways</h2>
+      <p>Through these professional experiences, I've developed a holistic understanding of how digital platforms and marketing strategies work together to drive business success. Some of my key learnings include:</p>
+      <ul>
+        <li><strong>Client-Centric Approach:</strong> Understanding client needs and translating them into technical solutions is crucial for project success</li>
+        <li><strong>Data-Driven Decision Making:</strong> Analytics and performance metrics are essential for optimizing strategies and demonstrating value</li>
+        <li><strong>Cross-Functional Collaboration:</strong> Effective communication between technical and non-technical stakeholders is key to delivering quality outcomes</li>
+        <li><strong>Adaptability:</strong> The digital landscape evolves rapidly, and staying current with trends and technologies is essential</li>
+        <li><strong>Quality Over Speed:</strong> While deadlines are important, maintaining high standards ensures long-term client satisfaction</li>
+      </ul>
+      <p style="margin-top: 25px;">These experiences have not only enhanced my technical skills but also taught me the importance of professionalism, time management, and continuous improvement. I'm excited to build on this foundation as I pursue more challenging opportunities in the tech industry.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>📧 prmatthew2005@gmail.com | 📍 Tamil Nadu, India</p>
+    <p>🔗 <a href="https://www.linkedin.com/in/p-r-matthew-728870373/" target="_blank">LinkedIn Profile</a></p>
+    <p style="margin-top: 20px; color: #666; font-size: 0.9rem;">© 2026 P. R. Matthew. Built with passion.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
